@@ -6,7 +6,7 @@
     <title>Achyut</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#F9F5F0] text-secondary min-h-screen mt-10">
+<body class="bg-[#F9F5F0] text-secondary min-h-screen">
 <livewire:components.navbar />
 {{ $slot }}
 </body>

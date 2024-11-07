@@ -1,4 +1,4 @@
-<div class="text-3xl h-[91vh] flex justify-between items-center px-2 mx-48">
+<div class="text-3xl h-[83vh] flex justify-between items-center px-2 mx-48">
     <div class="w-1/2 flex flex-col gap-4">
         <p class="text-3xl">Hi, I am</p>
         <h1 class="text-9xl font-bold text-primary">Achyut Neupane</h1>
