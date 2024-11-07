@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+    @apply text-6xl font-bold text-primary sticky top-0 w-full bg-[#F9F5F0]/80 backdrop-blur-sm px-48 py-12;
+}
+
+a {
+    @apply text-primary/75;
+}
