@@ -6,17 +6,18 @@
         $twitter = 'https://www.linkedin.com/in/achyut-kneupane/';
     @endphp
     <h2 class="section">Contact Me</h2>
-    <div class="mx-auto pb-24 lg:mx-48 flex flex-row gap-6">
-        <div class="flex flex-col gap-6 w-1/2">
+    <div class="mx-auto pb-24 px-4 sm:px-6 lg:px-0 lg:mx-48 flex flex-col-reverse lg:flex-row gap-6">
+
+        <div class="flex flex-col gap-6 w-full lg:w-1/2">
             <div>
                 <h3 class="text-2xl font-bold text-primary">Get in touch</h3>
                 <p class="text-gray-600">I am available for freelance work. Connect with me via email:</p>
-                <a href="mailto:{{ $email }}" class="hover:underline">{{ $email }}</a>
+                <a href="mailto:{{ $email }}" class="hover:underline break-words">{{ $email }}</a>
             </div>
             <div>
                 <h3 class="text-2xl font-bold text-primary">Social Media</h3>
                 <p class="text-gray-600">You can also find me on:</p>
-                <div class="flex items-center gap-4">
+                <div class="flex flex-wrap gap-4">
                     <a href="{{ $linkedin }}" class="hover:underline">LinkedIn</a>
                     <a href="{{ $github }}" class="hover:underline">GitHub</a>
                     <a href="{{ $twitter }}" class="hover:underline">Twitter</a>
@@ -27,11 +28,12 @@
                     creative ideas or opportunities to be part of your visions.</p>
             </div>
         </div>
-        <div class="col-span-2 w-1/2">
-            <div class="col-span-2">
+
+        <div class="w-full lg:w-1/2">
+            <div>
                 <h3 class="text-2xl font-bold text-primary">Contact Form</h3>
                 <form action="#" method="post" class="mt-4">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                         <div>
                             <label for="name" class="text-gray-600">Name</label>
                             <input type="text" id="name" name="name"
@@ -42,13 +44,13 @@
                             <input type="email" id="email" name="email"
                                    class="w-full border border-gray-300 rounded-md p-2 mt-1">
                         </div>
-                        <div class="col-span-2">
+                        <div class="col-span-1 md:col-span-2">
                             <label for="message" class="text-gray-600">Message</label>
                             <textarea name="message" id="message"
-                                      class="w-full border border-gray-300 rounded-md p-2 mt-1"></textarea>
+                                      class="w-full border border-gray-300 rounded-md p-2 mt-1 h-32"></textarea>
                         </div>
-                        <div class="col-span-2">
-                            <button type="submit" class="bg-primary/85 text-white px-4 py-2 rounded-md hover:bg-primary">
+                        <div class="col-span-1 md:col-span-2">
+                            <button type="submit" class="bg-primary/85 text-white px-4 py-2 rounded-md hover:bg-primary w-full md:w-auto">
                                 Send Message
                             </button>
                         </div>
